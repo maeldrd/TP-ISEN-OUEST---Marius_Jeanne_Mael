@@ -1,1 +1,90 @@
 body{font-family:sans-serif;margin:0;padding:0}
+/* ========== HEADER SIMPLE ========== */
+html { font-family: Open Sans, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+/* Conteneur principal du header */
+.header-isen {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Organisation interne */
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Logo */
+.header-logo img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+/* Titre du site (ajout) */
+.header-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #222;
+  white-space: nowrap;
+}
+
+/* Barre de navigation rouge */
+.header-nav {
+  background: #e30613; /* Rouge ISEN */
+  margin-left: auto;   /* pousse la nav à droite */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li { display: flex; }
+
+.header-nav a {
+  display: block;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+.header-nav a:hover,
+.header-nav a:focus {
+  background: #c40f1b;
+  outline: none;
+}
+
+/* Responsive : empiler la nav sur petits écrans */
+@media (max-width: 720px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+  .header-title {
+    width: 100%;
+    order: 2;
+  }
+  .header-nav {
+    width: 100%;
+    order: 3;
+    margin-left: 0;
+  }
+  .header-nav ul {
+    flex-wrap: wrap;
+  }
+  .header-nav a {
+    flex: 1 1 50%;
+    text-align: center;
+  }
+}
