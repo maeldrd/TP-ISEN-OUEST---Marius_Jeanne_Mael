@@ -63,3 +63,22 @@ img { max-width: 100%; height: auto; display: block; }
   background:#c1121f;color:#fff;text-align:center;padding:14px 16px;font-weight:600;
 }
 
+html {
+  font-family: Open Sans,sans-serif;
+}
+/* ===== F17 TEXT_IMG (apprentissage) ===== */
+.block-devenir{background:#fff;padding:60px 20px;}
+.block-container{max-width:1200px;margin:0 auto;} /* déjà présent ? alors garde une seule version */
+.block-title{font-size:42px;font-weight:700;color:#000;margin:0 0 40px;text-align:left;}
+.block-columns-img{display:flex;align-items:center;gap:40px;}
+.block-text{flex:1;padding-left:5%;}
+.block-text p{font-size:16px;line-height:1.7;color:#333;margin:0 0 18px;}
+.block-image{flex:1;display:flex;justify-content:center;}
+.block-image img{max-width:100%;height:auto;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.08);}
+
+/* responsive */
+@media (max-width:900px){
+  .block-columns-img{flex-direction:column-reverse;}
+  .block-text{padding-left:0;}
+}
+
