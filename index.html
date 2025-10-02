@@ -1,68 +1,94 @@
-<!-- HEADER_SIMPLE -->
-<header class="header-isen">
-<link rel="stylesheet" href="style.css">
-  <div class="header-container">
-    <!-- Logo -->
-    <a href="index.html" class="header-logo" aria-label="Accueil">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
-    </a>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ISEN – Démo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- Titre du site  -->
-    <div class="header-title">Site de Marius • Jeanne • Maël</div>
+  <!-- HEADER_SIMPLE (F11) -->
+  <header class="header-isen">
+    <div class="header-container">
+      <a href="index.html" class="header-logo" aria-label="Accueil">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest" />
+      </a>
+      <div class="header-title">Site de Marius • Jeanne • Maël</div>
+      <nav class="header-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apprentissage.html">Apprentissage</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="header-nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="apprentissage.html">Apprentissage</a></li>
-     
-        <!-- <li><a href="https://isen-ouest.fr/" target="_blank" rel="noopener">ISEN Ouest</a></li> -->
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- Images -->
-<section class="gallery">
-  <h2>Nos formations ingénieurs</h2>
-  <div class="gallery-grid">
-    <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" target="_blank" rel="noopener">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cycle cybersécurité ISEN Ouest">
-    </a>
-    <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" target="_blank" rel="noopener">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Cycle développement logiciel ISEN Ouest">
-    </a>
-    <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" target="_blank" rel="noopener">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence_artificielle.png" alt="Cycle intelligence artificielle ISEN Ouest">
-    </a>
-  </div>
-</section>
-<!-- F14 BLOCK -->
-<section class="blocks">
-  <div class="blocks-grid">
-    <!-- Post-bac -->
-    <article class="card">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formations post-bac ISEN Ouest">
-      <div class="card-body">
-        <h3>Formations post-bac</h3>
-        <p>Chaque étudiant construit son propre parcours sur 5 ans. Pendant les 3 premières années, 7 cycles de formation sont proposés.</p>
-        <a class="btn" href="#" aria-label="En savoir plus cycles post-bac">Cycles post-bac</a>
+  <!-- PLUGGIN IMAGES (F13) -->
+  <section class="dp-section" id="images">
+    <h2>Nos formations ingénieurs</h2>
+    <div class="dp-grid">
+      <div class="dp-card">
+        <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" target="_blank" rel="noopener">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cycle cybersécurité" />
+        </a>
+        <p>Cybersécurité</p>
       </div>
-    </article>
-
-    <!-- FISA / Apprentissage -->
-    <article class="card">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Cycle ingénieur en apprentissage">
-      <div class="card-body">
-        <h3>Devenir ingénieur par alternance</h3>
-        <p>Alternez école et entreprise, montez en compétence progressivement et soyez rémunéré tout au long du contrat.</p>
-        <a class="btn" href="#" aria-label="En savoir plus formation d’ingénieurs statut apprenti">Formation d'ingénieurs sous statut apprenti</a>
+      <div class="dp-card">
+        <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" target="_blank" rel="noopener">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Cycle développement logiciel" />
+        </a>
+        <p>Développement logiciel</p>
       </div>
-    </article>
-  </div>
-</section>
+      <div class="dp-card">
+        <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence_artificielle.png" target="_blank" rel="noopener">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence_artificielle.png" alt="Cycle intelligence artificielle" />
+        </a>
+        <p>Intelligence artificielle</p>
+      </div>
+    </div>
+  </section>
 
-<footer style="background:#c1121f;color:#fff;text-align:center;padding:14px 16px;font-weight:600;">
-  site de marius jeanne et mael
-</footer>
+  <!-- PLUGGIN BLOCK (F14) -->
+  <div class="block-container" id="blocks">
+    <div class="block-columns">
+
+      <!-- Post-bac -->
+      <section class="block-alternance">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formations post-bac" />
+        <div class="block-alternance-content">
+          <h2>Formations post-bac</h2>
+          <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+          <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+          <div class="block-button">
+            <a href="#" aria-label="En savoir plus sur les cycles post-bac">Cycles post-bac</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FISA / Apprentissage -->
+      <section class="block-alternance">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Cycle ingénieur en apprentissage" />
+        <div class="block-alternance-content">
+          <h2>Devenir ingénieur par alternance</h2>
+          <p>Le cycle ingénieur en apprentissage alterne périodes à l’école et en entreprise avec montée progressive en compétence.</p>
+          <p>Cette formation favorise une immersion professionnelle rapide, avec rémunération pendant toute la durée du contrat.</p>
+          <div class="block-button">
+            <a href="#" aria-label="En savoir plus sur la formation d'ingénieurs sous statut apprenti">
+              Formation d'ingénieurs sous statut apprenti
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- FOOTER_SIMPLE (F12) -->
+  <footer class="simple-footer">
+    site de marius jeanne et mael
+  </footer>
+
+</body>
+</html>
 
