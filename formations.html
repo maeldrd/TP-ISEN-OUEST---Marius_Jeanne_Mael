@@ -1,9 +1,12 @@
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-    <style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nos formations ingénieurs</title>
+
+  <!-- CSS HEADER — repris tel quel -->
+  <style>
 html {
     font-family: Open Sans,sans-serif;
 }
@@ -62,42 +65,10 @@ html {
 .header-nav a:hover {
   text-decoration: underline;
 }
-    </style>
-</head>
-<body>
-<header class="header-isen">
-  <div class="header-container">
-    <!-- Logo -->
-    <a href="/" class="header-logo">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
-    </a>
+  </style>
 
-    <!-- Navbar -->
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#">Liens à venir</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-    <style>
+  <!-- CSS FOOTER — repris tel quel -->
+  <style>
 html {
   font-family: Open Sans,sans-serif;
 }
@@ -170,7 +141,7 @@ html {
 }
 
 .footer-col {
-	width: 25%
+  width: 25%
 }
 .footer-col h3 {
   font-size: 16px;
@@ -207,32 +178,50 @@ html {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-    </style>
+  </style>
 </head>
 <body>
-<footer class="site-footer">
-  <div class="footer-container">
 
-    <!-- Colonne 1 : Logo + bouton -->
-    <div class="footer-col footer-col-logo">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
-           alt="ISEN Ouest" class="footer-logo">
+  <!-- HEADER (depuis header_simple.html) -->
+  <header class="header-isen">
+    <div class="header-container">
+      <a href="/" class="header-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Liens à venir</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Zone titres + colonnes 2-4 -->
-    <div class="footer-links-section">
-      <!-- Titre général -->
-      <p class="footer-cities">Texte à venir</p>
+  <!-- CONTENU provenant du .txt : titre + 3 images -->
+  <main>
+    <h1 style="margin: 40px 0 10px 100px;">Nos formations ingénieurs</h1>
 
+    <div style="display:flex; gap:30px; margin: 20px 0 40px 150px;">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="CYBERSÉCURITÉ">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="DÉVELOPPEMENT LOGICIEL">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="INTELLIGENCE ARTIFICIELLE">
+    </div>
+  </main>
 
-  </div>
+  <!-- FOOTER (depuis e1ba57ac… footer_simple.html) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col footer-col-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+             alt="ISEN Ouest" class="footer-logo">
+      </div>
 
-  <!-- Bas de page -->
-</footer>
-<div class="footer-bottom">
-  &copy;
-</div>
+      <div class="footer-links-section">
+        <p class="footer-cities">Texte à venir</p>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">&copy;</div>
+
 </body>
 </html>
-
 
