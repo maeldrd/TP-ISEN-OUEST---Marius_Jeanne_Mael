@@ -227,6 +227,33 @@ html {
   </footer>
   <div class="footer-bottom">&copy;</div>
 
+
+ 
+.text-img{
+  display: flex;
+  align-items: flex-start;   
+  gap: 32px;                 
+}
+
+
+.text-img > div{
+  flex: 1 1 auto;
+}
+
+
+.text-img img{
+  width: 420px; 
+  max-width: 40%;
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 900px){
+  .text-img{ flex-direction: column; }
+  .text-img img{ width: 100%; max-width: 100%; }
+}
+
 </body>
 </html>
 
